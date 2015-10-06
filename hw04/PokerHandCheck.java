@@ -18,19 +18,19 @@ public class PokerHandCheck {
     public static void main(String[] args) {
         
         Random randomcard1 = new Random();
-        int random1 = randomcard1.nextInt(52);   //create random number 1
+        int random1 = randomcard1.nextInt(52)+1;   //create random number 1
         
         Random randomcard2 = new Random();
-        int random2 = randomcard2.nextInt(52);   //create random number 2
+        int random2 = randomcard2.nextInt(52)+1;   //create random number 2
         
         Random randomcard3 = new Random();
-        int random3 = randomcard3.nextInt(52);   //create random number 3
+        int random3 = randomcard3.nextInt(52)+1;   //create random number 3
         
         Random randomcard4 = new Random();
-        int random4 = randomcard4.nextInt(52);   //create random number 4
+        int random4 = randomcard4.nextInt(52)+1;   //create random number 4
         
         Random randomcard5 = new Random();
-        int random5 = randomcard5.nextInt(52);   //create random number 5
+        int random5 = randomcard5.nextInt(52)+1;   //create random number 5
         
         String suitString1 = "";
         String suitString2 = "";
@@ -513,10 +513,12 @@ public class PokerHandCheck {
             System.out.println("You have a high card hand!");   // if no pairs, display this
         }
         
-        
+        else {
         System.out.print("You have "+pairs);
         System.out.print(" pair(s) and "+threeofakind);          //display pairs
         System.out.println(" three of a kind");
+        }
 
     }
 }
+
